@@ -6,8 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Aliens Are Glorping Real</title>
 
-
   </head>
+
+  <style>
+    /* Reset default styles */
+    body, ul {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #25cd27;
+    }
+
+    /* Navigation bar styling */
+    .navbar {
+        background: linear-gradient(90deg, #40c342, #29772a); /* Modern gradient */
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Keeps alien left, links centered */
+        padding: 15px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* Alien GIF styling */
+    .alien-logo {
+        width: 120px; /* Adjust size */
+        height: auto;
+        margin-right: 0px;
+    }
+
+    /* Centering navigation links */
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1; /* Makes sure links are centered */
+        gap: 20px; /* Adds spacing between links */
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 20px;
+        margin: 0 10px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .navbar a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+    }
+
+    /* Add spacing to avoid overlap with fixed navbar */
+    .content {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    /* Responsive Navigation */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .alien-logo {
+            margin-bottom: 10px;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="alien.gif" alt="Dancing Alien" class="alien-logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="https://babylonbee.com/" target="_blank">Trusted News</a>
+            <a href="blog.html">Blog Post</a>
+            <a href="https://youtu.be/l5JV5aEUjwc?si=CC4t_udOnJCubM0c" target="_blank">Fun</a>
+        </div>
+    </div>
+
 
     <style>
         /* Body and background */
@@ -63,7 +162,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 290%;
+            height: 340%;
             background-image: url('your-image.gif'); /* Replace with your actual GIF */
             background-size: cover;
             background-repeat: no-repeat;
@@ -81,6 +180,10 @@
     </style>
 </head>
 <body>
+    <br><br/>
+        <br><br/>
+            <br><br/>
+
     <button onclick="showModal()">Click Me</button>
 
     <!-- Background GIF element -->
@@ -107,7 +210,6 @@
                 var gifElement = document.getElementById('backgroundGif');
                 gifElement.style.backgroundImage = "url('glorpGIF.gif')"; // Set the GIF path
                 gifElement.classList.add('show-gif'); // Show the background GIF
-
                  document.body.style.color = "darkgreen";
 
                 alert("Open your Mind to the possibility");
@@ -138,23 +240,23 @@
 
           @keyframes moveGif {
               0% {
-                  top: 0;
+                  top: 8%;
                   left: 0;
               }
               25% {
-                  top: 0;
-                  left: 100%;
+                  top: 8%;
+                  left: 92%;
               }
               50% {
-                  top: 100%;
-                  left: 100%;
+                  top: 305%;
+                  left: 92%;
               }
               75% {
-                  top: 100%;
+                  top: 305%;
                   left: 0;
               }
               100% {
-                  top: 0;
+                  top: 8%;
                   left: 0;
               }
           }
@@ -174,7 +276,7 @@
           gifs.forEach(gif => {
               // Generate random values for animation properties
               const randomDuration = Math.floor(Math.random() * 10) + 5 + 's'; // Random duration between 5s and 15s
-              const randomDelay = Math.floor(Math.random() * 5) + 's'; // Random delay between 0s and 5s
+              const randomDelay = Math.floor(Math.random() * 6) + 's'; // Random delay between 0s and 5s
               const randomX = Math.floor(Math.random() * 100) + '%'; // Random horizontal movement
               const randomY = Math.floor(Math.random() * 100) + '%'; // Random vertical movement
 
@@ -191,19 +293,12 @@
   </body>
 
   <body>
-
-      <h1 style="text-align:center;"> Awaken your mind.
-      <audio controls autoplay>
-          <source src="music.mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-      </audio>
-      </h1>
-      <h1 style="text-align:center;"> Gleep your Glorp.
-      <audio controls autoplay>
-          <source src="music2.mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-      </audio>
-      </h1>
+    <br> <br/>
+    <br> <br/>
+    <br> <br/>
+    <p style="font-size: 40px; text-align: center; display: flex; justify-content: center; align-items: center; height: 10vh; margin: 0;">
+        Aliens Are Glorping Real.
+    </p>
 
   </body>
 
@@ -223,11 +318,29 @@
             height: 15vh; /* Full height of the viewport */
         }
     </style>
-    <p style="font-size: 40px;">Aliens Are Glorping Real.</p>
+
+    <h1 style="text-align:center;"> Awaken your mind.
+    <audio controls autoplay>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    </h1>
+  </body>
+
+  <body>
+    <br><br/>
+
+    <h1 style="text-align:center;"> Gleep your Glorp.
+    <audio controls autoplay>
+        <source src="music2.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    </h1>
     <br><br/>
 
 
     </div>
+
 
     <h2 style="font-size: 25px;"> Gleep Glorp visitors from outerspace are real and they are apart of a Galactic Empire.</h2>
       <p>Former Canadian Minister of Defense Paul Hellyer publicly stated that multiple extraterrestrial species
@@ -261,7 +374,6 @@
           were not U.S. military aircraft but could not determine if they were of hostile foreign origin.
           <br><br/>
           <iframe width="600" height="350" src="https://www.youtube.com/embed/VUrTsrhVce4" title="Pentagon declassifies leaked &#39;UFO&#39; videos (VIDEO 3/3)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
         <p>
         <p>
             Keep in mind, the only reason why the Pentagon declassified these videos in 2004 was becauase it was previously
@@ -304,6 +416,12 @@
 
         <iframe width="600" height="350" src="https://www.youtube.com/embed/3zm4nh3S66I" title="Michael Herrera - US Marine Encounters UFO Black Ops Human Trafficking Operation | SRS #66 (Part 1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p>
+
+          <br> <br/>
+          <br> <br/>
+          <br> <br/>
+          <br> <br/>
+          <br> <br/>
 
   </body>
 

@@ -1,168 +1,157 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Blog</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- font css -->
-      <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet">
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   </head>
-   <body>
-      <div class="header_section">
-         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="category.html">Category</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="testimonial.html">Testimonial</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                     </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                  </form>
-               </div>
-            </nav>
-         </div>
-      </div>
-      <!-- header section end -->
-      <!-- blog section start -->
-      <div class="blog_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="blog_taital">Latest Blogs</h1>
-               </div>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Alien Blorg Post</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <style>
+    /* Reset default styles */
+    body, ul {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #25cd27;
+    }
+
+    /* Navigation bar styling */
+    .navbar {
+        background: linear-gradient(90deg, #40c342, #29772a); /* Modern gradient */
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Keeps alien left, links centered */
+        padding: 15px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* Alien GIF styling */
+    .alien-logo {
+        width: 120px; /* Adjust size */
+        height: auto;
+        margin-right: 0px;
+    }
+
+    /* Centering navigation links */
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1; /* Makes sure links are centered */
+        gap: 20px; /* Adds spacing between links */
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 20px;
+        margin: 0 10px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .navbar a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+    }
+
+    /* Add spacing to avoid overlap with fixed navbar */
+    .content {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    /* Responsive Navigation */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .alien-logo {
+            margin-bottom: 10px;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+        }
+    }
+  </style>
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="alien.gif" alt="Dancing Alien" class="alien-logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="https://babylonbee.com/" target="_blank">Trusted News</a>
+            <a href="blog.html">Blog Post</a>
+            <a href="https://youtu.be/l5JV5aEUjwc?si=CC4t_udOnJCubM0c" target="_blank">Fun</a>
+        </div>
+    </div>
+  <body style="background-color: lightgreen;">
+        <img src="gnarp.jpg" alt="meow"
+       style="position: fixed; top: 435px; right: 100px; width: 150px; z-index: 1000;">
+
+    <!-- Blog Content -->
+    <div class="blog-container">
+        <h1>Blorg Post</h1>
+        <p>Welcome to my blog about aliens, UAPs, and everything in between!</p>
+
+        <!-- Blog Posts -->
+        <div class="post">
+            <h2 class="post-title">Schizo Post 1: Are Aliens Watching Us?</h2>
+            <p class="post-meta">Posted on <span>February 20, 2025</span></p>
+            <div class="post-content">
+                <p>In this post, I'm going to tell you why I believe aliens are secretly controlling our minds. The signs are everywhere...</p>
+                <p>People think I'm crazy, but have you seen the shape of the clouds today? They're clearly UFOs...</p>
             </div>
-            <div class="blog_section_2">
-               <div class="row">
-                  <div class="col-md-4">
-                     <div class="blog_img"><img src="images/blog-img1.png"></div>
-                     <div class="btn_main">
-                        <div class="date_text"><a href="#">06<br>April</a></div>
-                     </div>
-                     <div class="blog_box">
-                        <h3 class="blog_text">Undoubtable source</h3>
-                        <p class="lorem_text"> looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, contenish</p>
-                     </div>
-                     <div class="read_bt"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="blog_img"><img src="images/blog-img2.png"></div>
-                     <div class="btn_main">
-                        <div class="date_text active"><a href="#">06<br>April</a></div>
-                     </div>
-                     <div class="blog_box">
-                        <h3 class="blog_text">Undoubtable source</h3>
-                        <p class="lorem_text"> looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, contenish</p>
-                     </div>
-                     <div class="read_bt active"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="blog_img"><img src="images/blog-img3.png"></div>
-                     <div class="btn_main">
-                        <div class="date_text"><a href="#">06<br>April</a></div>
-                     </div>
-                     <div class="blog_box">
-                        <h3 class="blog_text">Undoubtable source</h3>
-                        <p class="lorem_text"> looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, contenish</p>
-                     </div>
-                     <div class="read_bt"><a href="#">Read More</a></div>
-                  </div>
-               </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title">Schizo Post 2: The Glorp Conspiracy</h2>
+            <p class="post-meta">Posted on <span>February 22, 2025</span></p>
+            <div class="post-content">
+                <p>I'm convinced that the government knows more about UFOs than they're letting on. The Glorp is not a myth...</p>
+                <p>If you look closely, you’ll see hidden symbols in the media. They can’t hide it forever...</p>
             </div>
-         </div>
-      </div>
-      <!-- blog section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding margin_top90">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-8">
-                  <div class="location_text">
-                     <ul>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>It is a long established fact that a <br>reader will be </a>
-                        </li>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+71) 1234567890</a>
-                        </li>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>demo@gmail.com</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="newslatter_main">
-                     <h1 class="useful_text">Follow Us</h1>
-                     <div class="footer_social_icon">
-                        <ul>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
-         </div>
-      </div>
-      <!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+
+            <div class="post">
+    <h2 class="post-title">Schizo Post 3: The Truth About The Glorp</h2>
+    <p class="post-meta">Posted on <span>February 25, 2025</span></p>
+    <div class="post-content">
+        <p>There are rumors about the Glorp, an ancient alien <a href="https://www.youtube.com/watch?v=gINv4ynAu0Q" target="_blank">artifact..</a>.</p>
+
+        <blockquote>
+            They can't hide the truth forever. The Glorp is real, and it's coming.
+        </blockquote>
+
+        <p>It's not just conspiracy; it's a fact. You can read more on the <a href="https://www.youtube.com/watch?v=WxrQ3SqSt6Q" target="_blank">official site</a>.</p>
+    </div>
+</div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+
 </html>

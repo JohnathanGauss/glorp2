@@ -6,6 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Aliens Are Glorping Real</title>
 
+    <style>
+      body {
+        font-family: 'Orbitron', sans-serif;
+      }
+      /* Popup background */
+      .popup-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+      }
+      /* Popup box */
+      .popup-box {
+          background: white;
+          padding: 20px;
+          text-align: center;
+          border: 2px solid lightgreen;
+          box-shadow: 0 0 10px green;
+          animation: shake 0.5s infinite;
+      }
+      /* Annoying shaking effect */
+      @keyframes shake {
+          0% { transform: translateX(0); }
+          25% { transform: translateX(-5px); }
+          50% { transform: translateX(5px); }
+          75% { transform: translateX(-5px); }
+          100% { transform: translateX(5px); }
+      }
+      /* Close button */
+      .close-btn {
+          background: red;
+          color: white;
+          padding: 10px;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          margin-top: 10px;
+      }
+      .popup-img {
+          width: 250px; /* Change this to desired size */
+          height: auto;
+          display: block;
+          margin: 15px auto;
+          border: 3px solid green;
+      }
+
+  </style>
+
   </head>
 
   <style>
@@ -13,7 +67,7 @@
     body, ul {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
+        font-family: 'Orbitron', sans-serif;
         background-color: #25cd27;
     }
 
@@ -96,14 +150,34 @@
 </head>
 <body>
 
+
+
+      <div class="popup-overlay" id="popup">
+          <div class="popup-box">
+              <h2>Can't get Robust?</h2>
+              <p>Click Now to Order Meepils that lasts for Years!</p>
+              <img src="meepils.jpg" alt="Annoying Image" class="popup-img">
+              <button class="close-btn" onclick="closePopup()">G-G-Guh??!?</button>
+          </div>
+      </div>
+
+      <script>
+          function closePopup() {
+              document.getElementById("popup").style.display = "none";
+          }
+      </script>
+
+
+
     <!-- Navigation Bar -->
     <div class="navbar">
         <img src="alien.gif" alt="Dancing Alien" class="alien-logo">
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="https://babylonbee.com/" target="_blank">Trusted News</a>
-            <a href="blog.html">Blog Post</a>
-            <a href="https://youtu.be/l5JV5aEUjwc?si=CC4t_udOnJCubM0c" target="_blank">Fun</a>
+            <a href="blog.html">Blorg Post</a>
+            <a href="https://www.youtube.com/watch?v=oyN6slOZcSE" target="_blank">Fun</a>
+            <a href="secret.html">⏃ </a>
         </div>
     </div>
 
@@ -229,6 +303,8 @@
               margin: 0;
               height: 100vh;
               overflow: auto; /* Allow scrolling */
+              font-family: 'Orbitron', sans-serif;
+
           }
 
           .gif {
@@ -315,6 +391,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: 'Orbitron', sans-serif;
+
             height: 15vh; /* Full height of the viewport */
         }
     </style>
@@ -331,7 +409,7 @@
     <br><br/>
 
     <h1 style="text-align:center;"> Gleep your Glorp.
-    <audio controls autoplay>
+    <audio controls>
         <source src="music2.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
@@ -342,16 +420,16 @@
     </div>
 
 
-    <h2 style="font-size: 25px;"> Gleep Glorp visitors from outerspace are real and they are apart of a Galactic Empire.</h2>
+    <h2 style="font-size: 25px;"> <a href="https://www.youtube.com/watch?v=DBhs676nka4E" target="_blank">Gleep Glorp</a> visitors from outerspace are real and they are apart of a Galactic Empire.</h2>
       <p>Former Canadian Minister of Defense Paul Hellyer publicly stated that multiple extraterrestrial species
          have been visiting Earth for decades and that world governments—particularly the United States—are aware
          of their presence. He claimed that some aliens resemble humans closely enough to blend in undetected,
           while others possess advanced technologies that could revolutionize energy and transportation.
           Hellyer asserted that secrecy around these beings stems from geopolitical and economic concerns,
-          as well as a desire to maintain control over advanced alien technology. <br><br/>
+          as well as a desire to maintain control over advanced <a href="https://www.youtube.com/watch?v=IAyfJ97uMLE" target="_blank">alien technology.</a></p><br><br/>
 
       In 2020, Haim Eshed, former head of Israel's space security program, claimed that the U.S. and Israel have been
-      in contact with extraterrestrials for years. He alleged that a "Galactic Federation" exists and that these
+      in contact with extraterrestrials for years. He alleged that a <a href="https://www.youtube.com/watch?v=4MDJdSI9xoI" target="_blank">"Galactic Federation"</a> exists and that these
       beings prefer to remain undisclosed until humanity is ready. Eshed also suggested that aliens have cooperated
        with American authorities on scientific projects and that a secret underground base exists on Mars where
        joint human-alien research is conducted.<br><br/>
@@ -359,12 +437,12 @@
       <a href="https://www.jpost.com/omg/former-israeli-space-security-chief-says-aliens-exist-humanity-not-ready-651405" target="_blank">Wake up Sheeple</a>
       <p>
         With these ridiculous claims, I can understand how crazy it sounds when these officials talk openly about
-         galactic federations like this is a fucking game of Stellaris and we are a pre-FTL civilization, how
+         galactic federations like this is a fucking game of <a href="https://youtu.be/O1CQ7Vwz8Eo?si=Of_1j9ndztP52V76" target="_blank">Stellaris</a> and we are a pre-FTL civilization, how
          Alien species are cooperating with nations, and UAP retrival programs actively being
         disclosed with the general public. I think there is something here and I dont think it is a
         coincidence.<br><br/>
 
-        <img src="images/glorp01.jpg" width="400" height="300">
+        <img src="glorp01.jpg" width="400" height="300">
       <p>
 
         <p>

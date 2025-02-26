@@ -5,6 +5,61 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Alien Blorg Post</title>
       <link rel="stylesheet" href="styles.css">
+
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Popup background */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        /* Popup box */
+        .popup-box {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid lightgreen;
+            box-shadow: 0 0 10px green;
+            animation: shake 0.5s infinite;
+        }
+        /* Annoying shaking effect */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(5px); }
+        }
+        /* Close button */
+        .close-btn {
+            background: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .popup-img {
+            width: 250px; /* Change this to desired size */
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border: 3px solid green;
+        }
+
+    </style>
+
   </head>
 
   <style>
@@ -95,14 +150,32 @@
   </head>
   <body>
 
+
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <h2>Warning! Gleep Glorps Now!</h2>
+            <p>Hot Glorps within 3.2 AU of your Solar System!</p>
+            <img src="hotglorp.jpg" alt="Annoying Image" class="popup-img">
+            <button class="close-btn" onclick="closePopup()">Holy Moly</button>
+        </div>
+    </div>
+
+    <script>
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+
     <!-- Navigation Bar -->
     <div class="navbar">
         <img src="alien.gif" alt="Dancing Alien" class="alien-logo">
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="https://babylonbee.com/" target="_blank">Trusted News</a>
-            <a href="blog.html">Blog Post</a>
+            <a href="blog.html">Blorg Post</a>
             <a href="https://youtu.be/l5JV5aEUjwc?si=CC4t_udOnJCubM0c" target="_blank">Fun</a>
+            <a href="secret.html">⏃ </a>
         </div>
     </div>
   <body style="background-color: lightgreen;">
@@ -144,6 +217,21 @@
 
         <p>It's not just conspiracy; it's a fact. You can read more on the <a href="https://www.youtube.com/watch?v=WxrQ3SqSt6Q" target="_blank">official site</a>.</p>
     </div>
+
+<div class="post"> <h2 class="post-title">Unveiled Secrets: The Whispering Lights of Area 52</h2>
+  <p class="post-meta">Posted on <span>February 26, 2025</span></p> <div class="post-content">
+    <p>I’ve been digging into something wild lately—those strange, flickering lights people keep spotting near
+       Area 52. You know, the one they don’t talk about as much as its famous neighbor? I’m telling you, there’s
+        more to these UAPs than just swamp gas or weather balloons.</p> <p>Rumor has it, late at night, you can
+          hear a low hum—like a whisper from the sky. Locals say it’s been happening for years, but lately, it’s
+          gotten louder. Some guy on X even posted a <a href="https://www.youtube.com/watch?v=4k6VFcaFeC0" target="_blank">blurry video last week,</a> claiming it’s proof of alien tech
+          testing. The patterns in the lights? Too precise to be random. Too quiet to be human drones. I’m
+          starting to think the feds have a deal going—maybe reverse-engineering something they pulled out
+          of the desert decades ago.</p> <p>And get this: old declassified files mention ‘unexplained aerial
+            phenomena’ in that exact region, but the details are blacked out. Coincidence? I don’t buy it.
+            Keep your eyes on the horizon, folks—the truth’s buzzing out there, and it’s only a matter of time
+            before it lands.</p> </div> </div>
+
 </div>
 
 
